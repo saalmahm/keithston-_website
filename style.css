@@ -121,7 +121,11 @@ a:hover {
     padding: 10px;
     color: #fff;
     font-family: 'Inter', sans-serif;
+    margin: 0 auto; /* Cela centre la section sur la page */
+    justify-content: center; /* Centre les cartes dans la grille */
+    align-items: center; /* Aligne les cartes verticalement au centre */
 }
+
 .product6 {
     background-image: url("/img/product.png");
     background-size: cover;
@@ -353,34 +357,232 @@ a:hover {
     display: flex;
     justify-content: space-between;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 300px) {
+
+    /* Header */
     #navbar {
-        position: absolute;
-        list-style: none;
+        left: 10%;
+    }
+
+    /* Section produits (.products6) */
+    .products6 {
+        grid-template-columns: 1fr;
+    }
+    .product6 img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Section #explore-more */
+    #explore-more {
+        padding: 30px;
+        font-size: 20px;
+    }
+
+    /* Galerie d'images (.image-gallery) */
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    /* Section des offres (Featured Treats) */
+    .treat img {
+        width: 120px;
+        height: 150px;
+    }
+
+    /* Bouton d'exploration */
+    .button-container button {
+        padding-inline: 15px;
+        padding-block: 8px;
+    }
+
+    /* Section promotion */
+    #promotion h2 {
+        font-size: 20px;
+    }
+
+    #promotion p {
+        font-size: 14px;
+    }}
+@media screen and (min-width: 301px) and (max-width: 600px) {
+
+    /* Header */
+    #navbar {
         left: 30%;
     }
 
+    /* Section produits (.products6) */
     .products6 {
-        max-width: 100%; 
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        padding: 0;
-        color: #fff;
-        font-family: 'Inter', sans-serif;
     }
+    .product6 img {
+        width: 160px;
+        height: 160px;
+    }
+
+    /* Section #explore-more */
+    #explore-more {
+        padding: 50px;
+        font-size: 30px;
+    }
+
+    /* Galerie d'images (.image-gallery) */
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Section des offres (Featured Treats) */
     .treat img {
-    width: 160px;
-    height: 200px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    box-shadow: 0 10px 20px rgba(171, 35, 205, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1);
+        width: 160px;
+        height: 200px;
+    }
+
+    /* Bouton d'exploration */
+    .button-container button {
+        padding-inline: 20px;
+        padding-block: 10px;
+    }
+
+    /* Section promotion */
+    #promotion h2 {
+        font-size: 24px;
+    }
+
+    #promotion p {
+        font-size: 16px;
+    }
 
 }
-.image-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 20px;
+@media screen and (max-width: 600px) {
+    .treats-container {
+        display: block; /* Change la disposition à une colonne verticale */
+    }
+
+    .treat {
+        margin-bottom: 20px; /* Ajouter un peu d'espace entre les images */
+    }
+
+    .treat img {
+        width: 100%; /* Les images prendront toute la largeur disponible */
+        height: auto; /* Garder les proportions */
+    }
 }
+/* Footer Section */
+#footer {
+    background-image: url('img/footer.png');
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    padding: 40px 0;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    width: 120px;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-social h3 {
+    margin-right: 10px;
+    color: #e9bd8c;
+}
+
+.footer-social img {
+    margin-left: 10px;
+    margin-right: 30px;
+    font-size: 20px;
+    color: #f5f5f5;
+}
+
+/* Line separator */
+.footer-line {
+    border: 0;
+    height: 2.5px;
+    background: #E9BD8D33;
+    width: 100%;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-about,
+.footer-links,
+.footer-news {
+    flex: 1;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-news h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #e9bd8c;
+    text-size-adjust: 36px;
+}
+
+.footer-about p,
+.footer-links ul li,
+.footer-news .news-item p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+    color: #e9bd8c;
+}
+
+.footer-news .news-item {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.footer-news .news-item img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.footer-news .news-item p {
+    margin: 0;
+}
+
+.footer-rights {
+    text-align: center;
+    color: #ccc;
+    font-size: 14px;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
 }
