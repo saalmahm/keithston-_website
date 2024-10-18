@@ -54,6 +54,8 @@ a:hover {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    box-shadow: 0 10px 20px rgba(171, 35, 205, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1);
+
 }
 #home-div .content {
     padding-top: 200px;
@@ -130,10 +132,13 @@ a:hover {
     padding: 20px;
     text-align: center;
     position: relative;
+    box-shadow: 0 10px 20px rgba(171, 35, 205, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1);
+
 }
 .product6 img {
     width: 226px;
     height: 223px;
+
 }
 .price-icon {
     display: flex;
@@ -185,6 +190,8 @@ a:hover {
     text-align: center;
     color: #4a2e2e;
     margin-top: 50px;
+    box-shadow: 0 10px 20px rgba(171, 35, 205, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1);
+
 }
 #promotion h2 {
     font-size: 36px;
@@ -229,6 +236,7 @@ a:hover {
     justify-content: center;
     gap: 15px;
     margin-bottom: 30px;
+
 }
 
 .category-tabs button {
@@ -260,6 +268,8 @@ a:hover {
 .image-gallery img {
     width: 100%;
     border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(171, 35, 205, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .about-us-container {
@@ -272,6 +282,8 @@ a:hover {
     justify-content: center;
     text-align: center;
     padding: 40px;
+    box-shadow: 0 10px 20px rgba(171, 35, 205, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1);
+
 
 }
 
@@ -328,6 +340,8 @@ a:hover {
     height: 400px;
     border-radius: 10px;
     margin-bottom: 15px;
+    box-shadow: 0 10px 20px rgba(171, 35, 205, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .treat h3 {
