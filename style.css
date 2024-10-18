@@ -145,16 +145,13 @@ a:hover {
     justify-content: space-between;
     width: 90%;
     align-items: center;
-
 }
-
+.price-icon .price-ic{
+    width: 39px;
+    height: 39px;
+}
 .price-icon h1 {
     font-size: 24px;
-    color: white;
-}
-
-.price-icon .icon {
-    font-size: 30px;
     color: white;
 }
 .row2 {
