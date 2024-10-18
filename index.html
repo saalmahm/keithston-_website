@@ -6,7 +6,8 @@
     <title>Ecommerce Website</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;500;700&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -15,13 +16,13 @@
     <!--Header -->
 
     <header id="header">
-        <a href="#home" class="ah"><img src="./img/logo.png" alt="Logo" class="logo"></a>
+        <a href="#home-div" class="ah"><img src="./img/logo.png" alt="Logo" class="logo"></a>
         <nav id="navbar">
             <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#blog" class="ah">Blog</a></li>
-                <li><a href="#conatct" class="ah">Contact Us</a></li>
-                <li><a href="#services" class="ah">Services</a></li>
+                <li><a href="#home-div" class="active">Home</a></li>
+                <li><a href="#promotion" class="ah">Blog</a></li>
+                <li><a href="#explore-more" class="ah">Contact Us</a></li>
+                <li><a href="#about-us" class="ah">Services</a></li>
             </ul>
         </nav>
     </header>
@@ -38,9 +39,9 @@
             </h1>
             <div class="button-container">
                 <button class="hero-btn">
-                    <a href="toproducts" class="btn-shop">Shop Now</a>
+                    <a href="#toproducts" class="btn-shop">Shop Now</a>
                 </button>
-                <a href="/" class="ah">Learn More</a>
+                <a href="#featured-treats" class="ah">Learn More</a>
             </div>
         </div>
 
@@ -137,7 +138,7 @@
         <div class="promo-content">
             <h2>20% Off Your First Order</h2>
             <p>Suspendisse ac rhoncus nisl, <br> eu tempor urna. Curabitur vel <br> bibendum augue.</p>
-            <button>Learn More</button>
+            <button><a href="#featured-treats">Learn more</a></button>
         </div>
     </section>
 
@@ -161,11 +162,12 @@
             <img src="/img/cake6.png" alt="Cake 6">
         </div>
     </section>
-    <section class="about-us">
+    <section id="about-us">
         <div class="about-us-container">
             <div class="about-us-content">
                 <h2>About Us</h2>
-                <p>Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis.</p>
+                <p>Suspendisse ac rhoncus nisl,<br> eu tempor urna. Curabitur vel <br> bibendum lorem. Morbi <br>
+                    convallis.</p>
                 <button class="read-more">Read More</button>
             </div>
         </div>
@@ -177,23 +179,30 @@
         <div class="treats-container">
             <div class="treat">
                 <img src="img/puff.png" alt="Puff Pastry">
-                <h3>Puff Pastry</h3>
-                <p>$8</p>
+                <div class="row3">
+                    <h3>Puff Pastry</h3>
+                    <p>$8</p>
+                </div>
             </div>
             <div class="treat">
                 <img src="img/doughnuts.png" alt="Doughnuts">
-                <h3>Doughnuts</h3>
-                <p>$8</p>
+                <div class="row3">
+                    <h3>Doughnuts</h3>
+                    <p>$8</p>
+                </div>
             </div>
             <div class="treat">
                 <img src="img/brownies.png" alt="Brownies">
-                <h3>Brownies</h3>
-                <p>$8</p>
+                <div class="row3">
+                    <h3>Brownies</h3>
+                    <p>$8</p>
+                </div>
+
             </div>
         </div>
     </section>
     <!--Footer Section-->
-  
+
 
 </body>
 
