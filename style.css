@@ -127,7 +127,7 @@ a:hover {
 }
 
 .product6 {
-    background-image: url("/img/product.png");
+    background-image: url("img/product.png");
     background-size: cover;
     border-radius: 10px;
     padding: 20px;
@@ -181,7 +181,7 @@ a:hover {
     background-color: #534A4A;
 }
 #promotion {
-    background-image: url("/img/promotion.png");
+    background-image: url("img/promotion.png");
     background-size: cover;
     padding: 60px 20px;
     text-align: center;
