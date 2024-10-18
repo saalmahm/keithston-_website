@@ -577,12 +577,17 @@ a:hover {
 .footer-news .news-item p {
     margin: 0;
 }
-
+.par{
+    display: flex;
+    flex-direction: column;
+}
+.par1{
+    color: #e9bd8c;
+}
 .footer-rights {
     text-align: center;
     color: #ccc;
     font-size: 14px;
     margin-top: 20px;
-    border-top: 1px solid #444;
     padding-top: 10px;
 }
